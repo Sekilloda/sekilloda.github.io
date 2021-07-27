@@ -51,7 +51,7 @@
           </li>
         </ol>
       </li>
-      <li><a href="#language-support">Language Support</a></li>
+      <li><a href="#presentaciones">Presentaciones</a></li>
       <li><a href="#sidenotes">Sidenotes</a></li>
       <li><a href="#alternative-typeface">Alternative Typeface</a></li>
       <li>
@@ -111,7 +111,7 @@
         <div>
             <figure>
                 <img src="/images/qed.jpg" alt="Image alt text" width="600" height="800">
-                <figcaption>Ondas electromagnéticas.</figcaption>
+                <figcaption>QED.</figcaption>
             </figure>
         </div>
       <p>
@@ -119,58 +119,35 @@
           fenómenos electromagnéticos enteramente desde el lengujae de la teoría de campos cuantizados. Fue la primera teoría de campos cuántica
           correcta y autoconsistente. Sus bases están en los estudios de la primera ola de físicos que estudiaron fenómenos cuánticos,
           específicamente en Dirac, que planteó la primera descripción mecánico-cuántica del electrón consistente con la Relatividad General.
-          Después de este logro histórico, Dirac se centró en buscar una descrpición de la emisión espontánea de radiación.
+          Después de este logro histórico, Dirac se centró en buscar una descripción de la emisión espontánea de radiación. Este fenómeno tenía
+          ya un descripción completa que estaba en acuerdo con los experimentos, pero era ad hoc. Las causas de esta emisión espontánea se encontraron
+          en la interacción de los electrones con fotones que no se podían predecir usando la ecuación de Schrödinger. Fue más adelante, en 1948, que
+          Shin-Ichiro Tomonaga y Richard Feynman postularon la primera teoría cuántica consistente con estos hallazgos, una teoría que usa el
+          lenguaje de los campos pero con interacciones cuantizadas, y que predice la existencia de partículas virtuales que median las interacciones.
       </p>
+        <p>
+            El libro de Feynman constituye una explicación muy accesible de una rama complicadísima de la Física. La mayor parte de las explicaciones
+            se hacen con analogías a fenómenos clásicos, o de forma pictórica. Este tipo de explicaciones claras para un público general
+            son el estándar de oro de la divulgación de la ciencia, y me parece que se deben socializar y preservar.
+        </p>
 
-      <pre><code class="language-html">&lt;div class="theorem"&gt;...&lt;/div&gt;
-&lt;div class="definition"&gt;...&lt;/div&gt;
-&lt;div class="lemma"&gt;...&lt;/div&gt;
-&lt;div class="proof"&gt;...&lt;/div&gt;</code></pre>
-      <p>Below are some examples.</p>
-      <h4 id="proofs-theorems">Proofs & Theorems</h4>
-      <div class="theorem">
-        The real numbers $\mathbb{R}$ are uncountable.
-      </div>
-      <div class="proof">
-        If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence
-        there exists a map C from $\mathbb{N}$ onto [0, 1] with
-        $$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n)
-        \in\{0,1, \ldots, 9\},$ are the digits in decimal expansion. Now
-        consider a real number $$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i}
-        \in[0,1]$$ with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$
-        for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A contradiction.
-      </div>
-      <div class="theorem">
-        If $S$ is both countable and infinite, then there is a bijection
-        between $S$ and $\boldsymbol{N}$ itself.<sup><a href="#fn1" id="ref1">1</a></sup>
-      </div>
-      <div class="proof">
-        For any $s \in S,$ we let $f(s)$ denote the value of $k$ such that $s$
-        is the $k$ the smallest element of $S .$ This map is well defined for
-        any $s,$ because there are only finitely many natural numbers between
-        1 and $s .$ It is impossible for two different elements of $S$ to both
-        be the $k$ the smallest element of $S$. Hence $f$ is one-to-one. Also,
-        since $S$ is infinite, $f$ is onto.
-      </div>
-      <h4 id="lemmas">Lemmas</h4>
-      <div class="lemma">
-        An even number plus an even number results in an even number.
-      </div>
-      <h4 id="definitions">Definitions</h4>
-      <div class="definition">
-        A definition is a a statement of the meaning of a word or word group
-        or a sign or symbol.<sup><a href="#fn2" id="ref2">2</a></sup>
-      </div>
-
-      <h2 id="language-support">Language Support</h2>
-      <p>
-        The labels of theorems, definitions, lemmas and proofs can be changed
-        to other
-        <a href="https://github.com/vincentdoerig/latex-css/tree/master/lang">supported language</a>
-        by including the following snippet, linking to the desired language in
-        addition to the main CSS file.
-      </p>
-      <pre><code class="language-html">&lt;link rel="stylesheet" href="https://latex.now.sh/lang/es.css" /&gt;
+      <h2 id="presentaciones">Presentaciones</h2>
+        <iframe src="https://epnecuador-my.sharepoint.com/personal/daniel_garcia01_epn_edu_ec/_layouts/15/Doc.aspx?sourcedoc={260d56d0-e2d8-4f7b-aefc-3ddd624ccfd8}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        <p>
+            En esta presentación está una expliación de los orígenes y el funcionamiento de la ley de Biot-Savart. También se incluye la resolución de un ejercicio en el
+            siguiente video explicativo.
+        </p>
+        <iframe width="610" height="367" src="https://www.youtube.com/embed/xD1LHM9uNoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://epnecuador-my.sharepoint.com/personal/daniel_garcia01_epn_edu_ec/_layouts/15/Doc.aspx?sourcedoc={c0c06670-7994-4378-bc78-9745dd654c61}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        <p>
+            En esta presentación está la resolución del ejercicio 3.6 del libro Introduction tu General Relativity de Cosimo Bambi.
+        </p>
+        <iframe src="https://epnecuador-my.sharepoint.com/personal/daniel_garcia01_epn_edu_ec/_layouts/15/Doc.aspx?sourcedoc={26d7ecfa-30e7-47bc-9b12-c4965b63a0a0}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        <p>
+            En esta presentación consta el cálculo del tensor de Faraday para el ejercicio 4.6.1 del mismo libro. Para acompañar a esta resolución,
+            está el siguiente <a href="https://colab.research.google.com/drive/1RCWwECYevf8C7OFVrjyKVYjmsl7KHTBP?usp=sharing">colab</a>.
+        </p>
+        <pre><code class="language-html">&lt;link rel="stylesheet" href="https://latex.now.sh/lang/es.css" /&gt;
   ...
 &lt;html lang="es"&gt;</code></pre>
       <p>
