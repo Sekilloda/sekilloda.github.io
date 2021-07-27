@@ -49,6 +49,9 @@
           <li>
             <a href="#QED">Reseña de Electrodinámica Cuántica</a>
           </li>
+            <li>
+                <a href="#propagacion">Propagación de ondas</a>
+            </li>
         </ol>
       </li>
       <li><a href="#presentaciones">Presentaciones</a></li>
@@ -131,6 +134,30 @@
             son el estándar de oro de la divulgación de la ciencia, y me parece que se deben socializar y preservar.
         </p>
 
+        <h3 id="propagacion">Propagación de ondas en un medio</h3>
+        <p>Para hablar de ondas electromagnéticas, necesitamos hablar de las ecuaciones de Maxwell. En un medio material, tienen la siguiente
+            forma:
+        </p>
+        <dd>
+            $$\nabla \cdot \mathbf{D} = \rho_f$$
+        </dd>
+        <dd>
+            $$\nabla \cdot \mathbf{B} = 0$$
+        </dd>
+        <dd>
+            $$\nabla \times \mathbf{E} = -\frac{\partial\mathbf{B}}{\partial t}$$
+        </dd>
+        <dd>
+            $$\nabla \times \mathbf{H} = \mathbf{j}_f+\frac{\partial\mathbf{D}}{\partial t}$$
+        </dd>
+        <p>Estas relaciones son generales, pero restringimos nuestro estudio al caso de un medio material simple que obedece las
+        relaciones constitutivas $\mathbf{D}=\epsilon\mathbf{E}$ y $\mathbf{H}=\mu\mathbf{B}$. Bajo estas condiciones, la polarización y magnetización
+        del medio son de forma $\mathbf{P}=(\epsilon-\epsilon_0)\mathbf{E}$ y $\mu_0\mathbf{M}=(\mu-\mu_0)\mathbf{H}$. El vector de
+        Poynting en este caso es $\mathbf{S}=\mathbf{E}\times\mathbf{H}$. Si además tomamos una región del medio libre de carga
+        $\rho_f=0$ y de corriente $\mathbf{j}_f=0$</p>
+
+
+
       <h2 id="presentaciones">Presentaciones</h2>
         <iframe src="https://epnecuador-my.sharepoint.com/personal/daniel_garcia01_epn_edu_ec/_layouts/15/Doc.aspx?sourcedoc={260d56d0-e2d8-4f7b-aefc-3ddd624ccfd8}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">Esto es un documento de <a target="_blank" href="https://office.com">Microsoft Office</a> incrustado con tecnología de <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
         <p>
@@ -147,13 +174,6 @@
             En esta presentación consta el cálculo del tensor de Faraday para el ejercicio 4.6.1 del mismo libro. Para acompañar a esta resolución,
             está el siguiente <a href="https://colab.research.google.com/drive/1RCWwECYevf8C7OFVrjyKVYjmsl7KHTBP?usp=sharing">colab</a>.
         </p>
-        <pre><code class="language-html">&lt;link rel="stylesheet" href="https://latex.now.sh/lang/es.css" /&gt;
-  ...
-&lt;html lang="es"&gt;</code></pre>
-      <p>
-        Take a peek at the <a href="/languages">language support demo</a> to
-        see how the labels of the different languages change.
-      </p>
 
       <h2 id="sidenotes">Sidenotes</h2>
       <p>
