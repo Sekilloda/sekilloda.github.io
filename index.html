@@ -52,6 +52,18 @@
             <li>
                 <a href="#propagacion">Propagación de ondas</a>
             </li>
+            <li>
+                <a href="#balance">Balance de energía del campo electromagnético</a>
+            </li>
+            <li>
+                <a href="#polarizadores">Polarizadores</a>
+            </li>
+            <li>
+                <a href="#weinberg">Reseña de Sueños de una Teoría Final</a>
+            </li>
+            <li>
+                <a href="#arcoiris">¿Cómo se forman los arco iris?</a>
+            </li>
         </ol>
       </li>
       <li><a href="#presentaciones">Presentaciones</a></li>
@@ -161,6 +173,142 @@
         <p>Esto nos dice dos cosas: las ondas en un medio material simple se propagan con las mismas propiedades que ondas en el vacío, pero a una velocidad
         ralentizada -esto lo podemos ver comparando $\mu_0\epsilon_0$ con $\mu\epsilon$-; y la energía se propaga bajo la misma ley.</p>
 
+        <h3 id="balance">Balance de energía del campo electromagnético en el vacío. </h3>
+            <p>Uno de los pilares de la teoría electromagnética clásica es que se puede llegar a encontrar todas
+                las leyes que rigen fenómenos electromagnéticos a partir de las leyes de Maxwell, junto con la ley de fuerza
+                de Lorentz<sup><a href="#fn1" id="ref1">1</a></sup>. Basados en este principio, nos disponemos a encontrar las ecuaciones
+                que describen el cambio de la energía total almacenada en el campo electromagnético, en una región vacía del espacio. Empecemos por
+                enunciar las leyes de Maxwell y la ley de fuerza de Lorentz, para el vacío. Bajo la presunción de que el
+                lector está familiarizado con estas ecuaciones, no explicaremos el significado de cada término.</p>
+            <dd>
+                \begin{equation}
+                \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}
+                \end{equation}
+            </dd>
+            <dd>
+                \begin{equation} \label{eq:max2}
+                \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}
+                \end{equation}
+            </dd>
+            <dd>
+                \begin{equation}
+                \nabla \cdot \mathbf{B} = 0
+                \end{equation}
+            </dd>
+            <dd>
+                \begin{equation} \label{eq:j}
+                \nabla \times \mathbf{B} = \mu_0\left(\mathbf{J}+\epsilon_0\frac{\partial \mathbf{E}}{\partial t}\right)
+                \end{equation}
+            </dd>
+            <dd>
+                \begin{equation} \label{eq:lorentz}
+                \mathbf{F} = q\left(\mathbf{E} + \mathbf{v}\times\mathbf{B}\right)
+                \end{equation}
+            </dd>
+        <p>La ecuación $\eqref{eq:lorentz}$ es la forma de la ley de fuerza de Lorentz para una partícula material
+            cargada, pero para un tratamiento general tenemos que considerar el caso continuo, en el que tenemos una
+            distribución espacial de carga. Para este caso, la ley de fuerza de Lorentz toma la siguiente forma:</p>
+            <dd>
+                \begin{equation} \label{eq:lorentz_continuous}
+                \mathbf{f} =\rho\left(\mathbf{E} + \mathbf{v}\times\mathbf{B}\right)
+                \end{equation}
+            </dd>
+        <p>Donde $\mathbf{f}$ es un campo vectorial que indica la densidad de fuerza en cada punto de la distribución
+        de carga; el origen de esta fuerza es la existencia de un campo electromagnético externo. Ahora que tenemos la forma
+        más general de la ley de fuerza, pensemos en lo que buscamos para relacionarlo con las ecuaciones que ya tenemos.
+        Queremos las ecuaciones que nos dan el cambio de la energía almacenada en el campo electromagnético cuando este realiza trabajo sobre un cuerpo; sabemos que por definición
+        energía es la capacidad de hacer trabajo, por lo tanto hace falta que encontremos la forma del trabajo que puede hacer el campo
+        electromagnético con un cuerpo con el que esté interactuando. Para este fin, usemos \eqref{eq:lorentz_continuous}, que
+        nos dará la densidad de fuerza actuando sobre cada punto de este cuerpo. Esta densidad de fuerza causará un desplazamiento
+        diferencial de cada punto del cuerpo, que se traduce a un desplazamiento del cuerpo total, y por lo tanto a trabajo realizado
+        sobre el cuerpo. Por lo tanto, tendremos la siguiente relación:</p>
+        <dd>
+            \begin{align*}
+            dW &= \mathbf{f} \cdot d\mathbf{r}\\
+             &=\rho\left(\mathbf{E} + \mathbf{v} \times \mathbf{B}\right) \cdot d\mathbf{r}\\
+             &=\rho\mathbf{E} \cdot d\mathbf{r}
+            \end{align*}
+        </dd>
+        <p>El último paso se justifica ya que $\mathbf{v} \times \mathbf{B}$ es un vector perpendicular tanto a $\mathbf{v}$
+        como a $\mathbf{B}$, y por lo tanto $\mathbf{v} \times \mathbf{B} \cdot \mathbf{v}=0$. Esto no es exactamente lo que queríamos; queremos
+            la forma del trabajo realizado por el campo electromagnético sobre el cuerpo, pero tenemos sólo el diferencial de trabajo,
+            que corresponde al trabajo realizado sobre un diferencial de masa. Podemos integrar esta relación, pero veremos que es
+            más ventajoso mantenerla así.
+            Si tomamos a $dW$ como forma
+        diferencial -lo es-, podemos dividir por $dt$ ambos lados de la ecuación, lo que nos dará:</p>
+        <dd>
+            \begin{align*}
+            \frac{dW}{dt}&=\rho\mathbf{E} \cdot \mathbf{v}\\
+            &=\mathbf{J} \cdot \mathbf{E}
+            \end{align*}
+        </dd>
+        <p>Esto nos revela por qué fue ventajoso mantener $dW$, pues pudimos encontrar la potencia que actúa sobre el cuerpo directamente. Esta es, por definición,
+        la razón de cambio del trabajo. Si manipulamos esta relación para eliminar el término con la corriente, reemplazando \eqref{eq:j}, encontramos lo siguiente:
+        </p>
+        <dd>
+            \begin{align*}
+            \mathbf{J} \cdot \mathbf{E}&=\left(\frac{\nabla \times \mathbf{B}}{\mu_0} - \epsilon_0\frac{\partial \mathbf{E}}{\partial t}\right) \cdot \mathbf{E}\\
+            &=\frac{\mathbf{E} \cdot \nabla \times \mathbf{B}}{\mu_0} - \epsilon_0\mathbf{E} \cdot \frac{\partial \mathbf{E}}{\partial t}
+            \end{align*}
+        </dd>
+        <p>Podemos usar la relación $\nabla \cdot \left( \mathbf{A} \times \mathbf{B} \right) = \left(\nabla \times \mathbf{A}\right) \cdot \mathbf{B} - \mathbf{A} \cdot \left( \nabla \times \mathbf{B} \right)$ para
+        obtener lo siguiente:</p>
+        <dd>
+            \begin{align*}
+            \mathbf{J} \cdot \mathbf{E}&=\frac{\mathbf{B} \cdot \nabla \times \mathbf{E} - \nabla \cdot \left(\mathbf{E} \times \mathbf{B} \right)}{\mu_0} - \epsilon_0\mathbf{E} \cdot \frac{\partial \mathbf{E}}{\partial t}
+            \end{align*}
+        </dd>
+        <p>Aquí reemplazamos \eqref{eq:max2}, lo que finalmente nos da:</p>
+        <dd>
+            \begin{align*}
+            \mathbf{J} \cdot \mathbf{E}&=-\mathbf{B} \cdot \frac{1}{\mu_0}\frac{\partial \mathbf{B}}{\partial t}  - \frac{1}{\mu_0}\nabla \cdot\left( \mathbf{E} \times \mathbf{B} \right) - \epsilon_0\mathbf{E} \cdot \frac{\partial \mathbf{E}}{\partial t}\\
+            &=-\frac{\partial}{\partial t}\left(\frac{B^2}{2 \mu_0} + \epsilon_0\frac{E^2}{2}\right) - \frac{1}{\mu_0}\nabla \cdot\left( \mathbf{E} \times \mathbf{B} \right)
+            \end{align*}
+        </dd>
+        <p>En el último paso usamos $E^2=\mathbf{E} \cdot \mathbf{E}$ y $B^2=\mathbf{B} \cdot \mathbf{B}$. Esta relación es finalmente lo que
+        buscábamos, pero con algunas identificaciones podemos escribirla más sucintamente. Llamamos densidad de energía electromagnética a</p>
+        <dd>
+            \begin{align*}
+            \varepsilon = \frac{B^2}{2 \mu_0} + \epsilon_0\frac{E^2}{2}
+            \end{align*}
+        </dd>
+        y vector de Poyting a
+        <dd>
+            \begin{align*}
+            \mathbf{N} = \frac{1}{\mu_0}\mathbf{E}\times\mathbf{B}
+            \end{align*}
+        </dd>
+        con estos símbolos tendremos que nuestra ecuación es:
+        <dd>
+            \begin{align*}
+            \mathbf{J} \cdot \mathbf{E}&= -\frac{\partial \varepsilon}{\partial t} - \nabla \cdot \mathbf{N}
+            \end{align*}
+        </dd>
+        <p>Discutamos el significado físico de este resultado. Tenemos en el lado izquierdo el trabajo realizado por el campo
+        electromagnético en nuestro cuerpo, por unidad de tiempo, por unidad de volumen. En el lado derecho tenemos la razón de cambio
+        de la energía almacenada en el campo electromagnético, por unidad de volumen; también a la divergencia de una nueva cantidad que hemos
+        nombrado vector de Poynting. Si pasamos de esta formulación diferencial a una integral, usando el teorema de la divergencia, podemos enunciar el siguiente teorema:</p>
+        <div class="theorem"> El trabajo hecho por el campo electromagnético sobre una distribución de cargas es igual al decremento de energía restante
+        en el campo, menos la energía que fluyó por la superficie que encierra a la distribución.</div>
+        <div class ="proof"> Sólo hace falta pasar a la formulación integral del resultado anterior. Parea esto, integramos sobre un volumen $V$ y usamos el teorema de la
+        divergencia:
+            <dd>
+                \begin{align*}
+                -\frac{d}{dt}\iiint_{V}\varepsilon dV -\iint_{\partial V} \mathbf{N} \cdot d\mathbf{S}= \iiint_{V} \mathbf{J} \cdot \mathbf{E}
+                \end{align*}
+            </dd>
+        </div>
+        <h3 id="polarizadores">Explicación corta de cómo funciona un polarizador de lámina.</h3>
+        <div>
+        <figure>
+            <img src="/images/stress.jpg" alt="Polarizador" width="600" height="800">
+            <figcaption>Polarizador de lámina usado para explorar estrés interno en plásticos. Fuente: Exploratorium.</figcaption>
+        </figure>
+        </div>
+        <p>El primer polarizador de lámina que tuvo <sup><a href="#fn2" id="ref2">2</a></sup></p>
+        <h3 id="weinberg">Reseña de Electrodinámica Cuántica, de Richard Feynman. Traducido por Ana Gómez Antón. </h3>
+        <h3 id="arcoiris">Reseña de Electrodinámica Cuántica, de Richard Feynman. Traducido por Ana Gómez Antón. </h3>
+
 
 
 
@@ -179,6 +327,10 @@
         <p>
             En esta presentación consta el cálculo del tensor de Faraday para el ejercicio 4.6.1 del mismo libro. Para acompañar a esta resolución,
             está el siguiente <a href="https://colab.research.google.com/drive/1RCWwECYevf8C7OFVrjyKVYjmsl7KHTBP?usp=sharing">colab</a>.
+        </p>
+        <iframe src="https://onedrive.live.com/embed?cid=59A8FBF36DDE37C3&amp;resid=59A8FBF36DDE37C3%214963&amp;authkey=AP35pPI_6fjxsjk&amp;em=2&amp;wdAr=1.7777777777777777" width="610px" height="367px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        <p>
+            En esta presentación se expuso los resultados principales sobre la propagación de ondas en guías de tubo hueco con sección transversal circular.
         </p>
 
       <h2 id="colabs">Colabs</h2>
@@ -207,6 +359,21 @@
         </figure>
         <p>En <a href="https://colab.research.google.com/drive/1nguhH8-MuCklDLDBI5gWrydXdvBK90H3?usp=sharing">este</a>
             Colab se calcula los componentes magnéticos y eléctricos de una onda con fase arbitraria por componente. También se grafican los componentes eléctricos.</p>
+        <h3>Polarización</h3>
+        <p>En <a href="https://colab.research.google.com/drive/1evM_zs3kD28_7eqCyQptfVZBaVNWnhhV?usp=sharing">este</a>
+            Colab se indica la forma del campo eléctrico y magnético de una onda electromagnética polarizada linealmente.</p>
+        <div class="footnotes">
+            <p id="fn1">
+                1.
+                Griffiths, David J. Introduction to Electrodynamics. Fourth Edition. Boston: Pearson, 2013.
+                <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a>
+            </p>
+            <p id="fn2">
+                2. Edwin H. Land (1951). Some Aspects of the Development of Sheet Polarizers. Journal of the Optical Society of America, 41(12), 957.
+                <a href="https://doi.org/10.1364/JOSA.41.000957">doi</a>.
+                <a href="#ref2" title="Jump back to footnote 2 in the text.">↩</a>
+            </p>
+        </div>
 
 
     </article>
@@ -216,6 +383,7 @@
     MathJax = {
       tex: {
         inlineMath: [['$', '$'],],
+          tags: 'ams'
       },
     }
     const toggle = document.getElementById('typeface-toggle')
